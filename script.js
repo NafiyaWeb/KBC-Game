@@ -20,7 +20,7 @@ function loadQuestion() {
 
 function generateQRCode() {
     const qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: `https://tinyurl.com/your-game-url?question=${currentQuestionIndex}`, // Replace with your valid URL
+        text: `https://nafiyaweb.github.io/KBC-Game/?question=${currentQuestionIndex}`, // Replace with your valid URL
         width: 128,
         height: 128,
         colorDark: "#000000",
