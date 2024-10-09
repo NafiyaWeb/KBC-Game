@@ -18,17 +18,6 @@ function loadQuestion() {
     }
 }
 
-function generateQRCode() {
-    const qrcode = new QRCode(document.getElementById("qrcode"), {
-        text: `https://nafiyaweb.github.io/KBC-Game/?question=${currentQuestionIndex}`, // Replace with your valid URL
-        width: 128,
-        height: 128,
-        colorDark: "#000000",
-        colorLight: "#ffffff",
-        correctLevel: QRCode.CorrectLevel.H,
-    });
-}
-
 document.getElementById("submit-answer").addEventListener("click", function () {
     const userAnswer = document.getElementById("answer").value.trim();
     const correctAnswer = questions[currentQuestionIndex].answer;
